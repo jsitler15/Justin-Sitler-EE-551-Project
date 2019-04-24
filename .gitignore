@@ -1,0 +1,6 @@
+.idea/
+src/*.egg-info
+src/mypkg/__pycache__/
+tests/__pycache__/
+.pytest_cache/
+__pycache__/
