@@ -1,36 +1,24 @@
 EE551 Python Project by Justin Sitler
 
 Objective:
-- To create a simple 2D game similar to The Legend of Zelda, in which the player can move the character, attack, defeat enemies,
-  and explore areas.
+- To create a simple 2D game similar to The Legend of Zelda, in which the player can move the character, attack,
+defeat enemies, and reach higher levels
 
 Features:
 - 1 player game
 - Uses Pygame library to create interactive graphics
-- Potentially randomly generated maps to explore
-- Enemies who attack character and must be defeated with an attack
-- Items to pick up and use, spawned randomly in maps
+- Enemies who attack character and must be defeated with a sword attack
+- Two Levels currently, but Level class has been created to easily add more
+- Player class which can move using WASD inputs, and move sword using mouse tracking
+- Enemy class created which forms a template to create different types of enemies
+- Weapon class created which forms a template to create different types of weapons
+- Walls class which the player cannot move through, which forms boundary of room (could also be obstacles within room)
+- Game over screen for winning or losing, displaying cumulative score
 
-TODO:
-- Create window for playing environment
-- Create images for background, characters, enemies, etc
-- Create "Player" class with certain attributes:
-  - Health
-  - Equipped Item
-  - Position
-- Create "Enemy" class with certain attributes:
-  - Health
-  - Attack Behavior
-  - Position
-- Create "Room" class with certain attributes:
-  - Wall boundaries
-  - Doorways to connect to other rooms
-  - Item locations
-- Map input commands to Player position, item attacks, and other interactions
-
-Extras:
-- Pause Menu with options
-- Inventory to use multiple items
-- Randomly created maps
-- Levels with boss enemies to defeat
+Future improvements to the game:
+- Create .png images for background, characters, enemies, etc instead of using simple rectangles and ellipses
+- More types of enemies, with more interesting movement / attack patterns (for example, Boss enemy)
+- Create more levels, potentially randomly created levels with unique wall layout, enemy composition, and items
+- Introduce Item class and an inventory list, allowing player to use different weapons and other effects
 - Background music and sound effects
+- More sophisticated player / enemy attacks, animations for attacks
