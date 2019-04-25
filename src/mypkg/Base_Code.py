@@ -199,8 +199,8 @@ class Enemy(Player):
                    (self.startPosX - self.sizeX/2) - wall_width))
         minY = int(min(screen_height - wall_width - (self.startPosY + self.sizeY/2),
                    (self.startPosY - self.sizeY/2) - wall_width))
-        trajectoryX = random.randrange(0, minX)
-        trajectoryY = random.randrange(0, minY)
+        trajectoryX = random.randint(0, minX)
+        trajectoryY = random.randint(0, minY)
         self.direction = random.choice((-1, 1))
         self.traj = [trajectoryX, trajectoryY, self.frequency]
         self.center = [self.rect.x + self.sizeX/2, self.rect.y + self.sizeY/2]

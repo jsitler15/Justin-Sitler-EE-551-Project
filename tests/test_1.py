@@ -17,6 +17,7 @@ def test_update():
     enemy.update()
     assert(enemy.invincible == False)
 
+
 def test_damage():
     enemy = Enemy(50, 50)
     enemy.initialize()
